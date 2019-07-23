@@ -1,5 +1,4 @@
 .env
-nginx/
 !data/.keep_me
 !data/esdata/.keep_me
 data/esdata/nodes

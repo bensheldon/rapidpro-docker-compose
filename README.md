@@ -1,16 +1,15 @@
 # rapidpro-docker-compose
 
-A deployable rapidpro docker-compose setup. Batteries included:
-- ssl via letsencrypt
-- backing services: elasticsearch, postgres, redis, etc.
-- celery tasks
+A functional [RapidPro](https://rapidpro.github.io/rapidpro/docs/components/) instance, including:
+
+- RapidPro
+- Celery job workers
+- Mailroom
+- Courier
+- rp-indexer and rp-archiver
 
 To deploy, copy `sample.env` to `.env`, edit it for correct values and then run `docker-compose up`
 
-Note: elasticsearch is currently using ephemeral storage.
-
-Works reasonably well on a single host. Will test on docker swarm cluster next.
-
-To test with ngrok, put the ngrok domain as your RAPIDPRO_HOST environment in .env
+To test with ngrok/serveo.net, put the public domain as your RAPIDPRO_HOST environment in .env
 
 
